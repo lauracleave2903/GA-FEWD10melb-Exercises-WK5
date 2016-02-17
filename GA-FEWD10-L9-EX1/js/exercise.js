@@ -75,10 +75,20 @@ $('#button3').click(function () {
  * $(".city").attr("src", "http://lorempixel.com/g/500/400/food");
  */
 
-
+$('#button3').click(function () {
+    $('.city').attr('src', 'http://lorempixel.com/g/500/400/food');
+    //The figure image changes to a different image
+});
 
 /**
  * Question 9:
  * When button 3 is clicked, select all paragraphs on the page and change the color to blue and font to Georgia.
  * Bonus: Try to do this with only one jQuery call. $("selector").css({attribute: "value", attribute: "value"});
  */
+
+$('#button3').click(function () {
+    $('p').css({
+        color: 'blue',
+        fontFamily: 'Georgia'
+    });
+});
